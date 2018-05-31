@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Survey</title>
+    <title>Celebrity Match</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script  src="js/jquery-1.12.4.js"></script>
@@ -10,8 +10,30 @@
   </head>
   <body>
     <div class="container">
-    <h1>Survey</h1>
+    <h1>Celebrity Match</h1>
     <form id="you">
+
+      <h2>Gender</h2>
+      <div class="radio">
+        <label>
+          <input type="radio" name="gender" value="female">
+            female
+        </label>
+      </div>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="gender" value="male">
+            male
+        </label>
+      </div>
+
+      <div class="radio">
+        <label>
+          <input type="radio" name="gender" value="other">
+            other
+        </label>
+      </div>
 
       <h2>Favorite Music</h2>
       <div class="radio">
@@ -78,7 +100,7 @@
       </div>
 
       <div class="form-group">
-        <label for="born">Date of birth:</label>
+        <label for="born"><h2>Date of birth:</h2></label>
         <input id="born" class="form-control" type="date">
       </div>
 
@@ -89,8 +111,8 @@
 
 
 
-    <div id="collected-data">
-
+    <div id="result-panel">
+      Your celebrity match is:<span id="result"></span>
 
     </div>
   </div>
